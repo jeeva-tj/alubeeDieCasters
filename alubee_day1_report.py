@@ -18,7 +18,7 @@ with column1:
     st.markdown('<div style="display:flex; align-items:center;"><img src="https://storage.cloud.google.com/alubee_bucket/biglogo.png?authuser=4" style="width:90px;height:70px;margin-right:20px;" />', unsafe_allow_html=True)
 
 with column4:
-    st.markdown('<div style="margin-bottom: 10px;"><h3 class="title">Assessment I</h3></div>', unsafe_allow_html=True)
+    st.markdown('<div style="margin-bottom: 10px;"><h3 class="title">Assessment  I</h3></div>', unsafe_allow_html=True)
 with column7:
 
     st.markdown('<div style="margin-bottom: 10px;"><h7 class="title">Date  : 23 Sept 2023  Shift : II (8:00 to 7:30)</h7></div>', unsafe_allow_html=True)
