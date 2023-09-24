@@ -19,7 +19,9 @@ with column1:
 
 with column8:
 
-    st.markdown('<h7 class="title">Date : 24 Sept 2023</h7></div>', unsafe_allow_html=True)
+    st.markdown('<h7 class="title">Date  : 24 Sept 2023</h7></div>', unsafe_allow_html=True)
+    st.markdown('<h7 class="title">Shift : II</h7></div>', unsafe_allow_html=True)
+
 
 url = "https://us-central1-1.gcp.cloud2.influxdata.com"
 token = "7vu3JRiROx0LRI6P24ze8FfONTrRgVA_PKlTrVsW_ho2wt3v9GgWNTRGRsELZSyOkMA_rQaynNJQMs6-OENbEA=="
@@ -63,7 +65,7 @@ with column1:
     fig = px.bar(df_grouped, y='_value', x='_time', text_auto='.2s',
                 title="Shots Per Hour",color_discrete_sequence=['#00a651'])
     # fig.update_traces(textfont_size=12, textangle=0, textposition="inside", cliponaxis=False)
-    fig.update_xaxes(title='Time - Shift II')
+    fig.update_xaxes(title='Time in Hour')
     fig.update_yaxes(title='No of Shots')
     fig.update_layout(height=400, width=600)
 
@@ -108,7 +110,7 @@ with column2:
     # fig = px.bar(df_grouped, x='_time', y='_value',
     #             color='_value',
     #             labels={'pop':'Rejection Count'}, height=400)
-    fig.update_xaxes(title='Time - Shift II')
+    fig.update_xaxes(title='Time in Hour')
     fig.update_yaxes(title='No of Rejections')
     fig.update_traces(text=df_grouped['_value'], mode='lines+markers+text', textposition='top center')
     fig.update_layout(height=400, width=600)
