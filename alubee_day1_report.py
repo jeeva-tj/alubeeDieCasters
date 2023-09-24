@@ -11,8 +11,15 @@ import plotly.express as px
 
 
 st.set_page_config(layout="wide")
-st.markdown('<div style="display:flex; align-items:center;"><img src="https://storage.cloud.google.com/alubee_bucket/biglogo.png?authuser=4" style="width:80px;height:50px;margin-right:20px;" />', unsafe_allow_html=True)
+column1,column2,column3,column4,column5,column6,column7,column8 = st.columns(8)
 
+with column1:
+
+    st.markdown('<div style="display:flex; align-items:center;"><img src="https://storage.cloud.google.com/alubee_bucket/biglogo.png?authuser=4" style="width:80px;height:50px;margin-right:20px;" />', unsafe_allow_html=True)
+
+with column8:
+
+    st.markdown('<h2 class="title">Date:24 Sept 2023</h2></div>', unsafe_allow_html=True)
 
 url = "https://us-central1-1.gcp.cloud2.influxdata.com"
 token = "7vu3JRiROx0LRI6P24ze8FfONTrRgVA_PKlTrVsW_ho2wt3v9GgWNTRGRsELZSyOkMA_rQaynNJQMs6-OENbEA=="
