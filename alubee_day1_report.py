@@ -14,7 +14,6 @@ st.set_page_config(layout="wide")
 st.markdown('<h1 class="title">Alubee DIE Casters</h1>', unsafe_allow_html=True)
 
 
-
 url = "https://us-central1-1.gcp.cloud2.influxdata.com"
 token = "7vu3JRiROx0LRI6P24ze8FfONTrRgVA_PKlTrVsW_ho2wt3v9GgWNTRGRsELZSyOkMA_rQaynNJQMs6-OENbEA=="
 org = "dev"
@@ -59,6 +58,7 @@ with column1:
     # fig.update_traces(textfont_size=12, textangle=0, textposition="inside", cliponaxis=False)
     fig.update_xaxes(title='Time - Shitf II')
     fig.update_yaxes(title='No of Shots')
+    fig.update_layout(height=400, width=600)
 
     st.plotly_chart(fig)
 
@@ -104,6 +104,8 @@ with column2:
     fig.update_xaxes(title='Time - Shitf II')
     fig.update_yaxes(title='No of Rejections')
     fig.update_traces(text=df_grouped['_value'], mode='lines+markers+text', textposition='top center')
+    fig.update_layout(height=400, width=600)
+
     st.plotly_chart(fig)
 
 
