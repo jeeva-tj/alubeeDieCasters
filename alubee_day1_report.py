@@ -155,14 +155,12 @@ df = pd.DataFrame(data_list)
 columns_to_drop = ['result', '_start','_stop','_field']  # List of columns to drop
 
 df = df.drop(columns=columns_to_drop)
-
-st.dataframe(df)
     # st.metric(label="<b>Total Rejections</b>", value=df_grouped["_value"].sum(), delta=0, delta_color="off", key="total_rejections")
 
 
 with column_fir3:
-    st.write("Operators")
-    st.write("F2 79 45 52"+" "+"A1 3E 54 4B")
+    st.metric(label="<b>Average Cycle Time</b>", value="49.73 Seconds", delta=0, delta_color="off", key="total_rejections")
+
 
 
 
