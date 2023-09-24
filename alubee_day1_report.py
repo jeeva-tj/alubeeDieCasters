@@ -118,7 +118,9 @@ df_grouped = df.groupby('_time').agg({'_value': 'sum'}).reset_index()
 
 with column2:
   
-    fig = px.line(df_grouped, x='_time', y="_value",title="Rejections Per Hour",color_discrete_sequence=['#767a79'])
+    # fig = px.line(df_grouped, x='_time', y="_value",title="Rejections Per Hour",color_discrete_sequence=['#767a79'])
+        fig = px.line(df_grouped, x='_time', y="_value",title="Rejections Per Hour")
+
     # fig = px.bar(df_grouped, x='_time', y='_value',
     #             color='_value',
     #             labels={'pop':'Rejection Count'}, height=400)
