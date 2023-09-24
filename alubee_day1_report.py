@@ -176,39 +176,20 @@ with column_fir5:
     st.metric(label="No of Breaks", value=1)
 
 
+query = f'from(bucket:"{bucket}") |> range(start:2023-09-23T14:30:00.00Z , stop:2023-09-24T02:30:00.00Z) |> filter(fn: (r) => r["_measurement"] == "Idle")'
+tables = client.query_api().query(query, org=org)
 
+data_list = []
 
-# # Header
-# st.header("This is a header")
+for table in tables:
+    for row in table.records:
+        data = row.values
+        # Convert UTC time to IST
+        utc_time = data['_time']
+        ist = pytz.timezone('Asia/Kolkata')
+        data['_time'] = utc_time.astimezone(ist)
+        data_list.append(data)
 
-# # Subheader
-# st.subheader("This is a subheader")
-
-# # Text
-# st.write("This is some plain text.")
-
-# # Markdown
-# st.markdown("### This is a Markdown header")
-
-# # Displaying a number
-# number = st.number_input("Enter a number", min_value=0, max_value=100)
-
-# # Displaying a slider
-# slider_value = st.slider("Choose a value", min_value=0, max_value=100)
-
-# # Button
-# if st.button("Click me"):
-#     st.write("Button clicked!")
-
-# # Checkbox
-# checkbox = st.checkbox("Checkbox")
-# if checkbox:
-#     st.write("Checkbox is checked")
-
-# # Selectbox
-# option = st.selectbox("Select an option", ["Option 1", "Option 2", "Option 3"])
-# st.write("You selected:", option)
-
-# # Radio button
-# radio = st.radio("Choose one option", ["Option A", "Option B", "Option C"])
-# st.write("You selected:", radio)
+# Convert list of dictionaries to DataFrame
+df = pd.DataFrame(data_list)
+st.dataframe(df)
