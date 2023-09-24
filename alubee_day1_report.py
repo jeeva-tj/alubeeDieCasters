@@ -163,7 +163,7 @@ with column_fir3:
 
 with column_fir4:
     st.write("Operator")
-    st.markdown('<div style="margin-bottom: 10px;"><h6 class="title">F2 79 45 52</h6></div>', unsafe_allow_html=True)
+    st.markdown('<div style="margin-bottom: 10px;"><h3 class="title">F2 79 45 52</h3></div>', unsafe_allow_html=True)
 
 
 
