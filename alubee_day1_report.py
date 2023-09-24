@@ -161,7 +161,10 @@ st.dataframe(df)
 
 
 with column_fir3:
-    st.write("Test")
+    st.write("Operators")
+    st.write("F2 79 45 52")
+    st.write("A1 3E 54 4B")
+
 
 
 
