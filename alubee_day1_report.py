@@ -168,7 +168,8 @@ with column_fir4:
     # Markdown with title
     st.markdown('<div style="margin-bottom: 10px;"><h3 class="title">F2 79 45 52</h3></div>', unsafe_allow_html=True)
 
-
+with column_fir3:
+    st.metric(label="No of Breaks", value=1)
 
 
 
