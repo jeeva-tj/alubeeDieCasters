@@ -19,7 +19,7 @@ with column1:
 
 with column8:
 
-    st.markdown('<h4 class="title">Date:24 Sept 2023</h4></div>', unsafe_allow_html=True)
+    st.markdown('<h7 class="title">Date:24 Sept 2023</h7></div>', unsafe_allow_html=True)
 
 url = "https://us-central1-1.gcp.cloud2.influxdata.com"
 token = "7vu3JRiROx0LRI6P24ze8FfONTrRgVA_PKlTrVsW_ho2wt3v9GgWNTRGRsELZSyOkMA_rQaynNJQMs6-OENbEA=="
