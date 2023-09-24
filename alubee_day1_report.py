@@ -11,7 +11,7 @@ import plotly.express as px
 
 
 st.set_page_config(layout="wide")
-st.markdown('<h2 class="title">Alubee DIE Casters</h2>', unsafe_allow_html=True)
+st.markdown('<div style="display:flex; align-items:center;"><img src="gs://alubee_bucket/biglogo.png" style="width:50px;height:50px;margin-right:10px;" /><h2 class="title">Alubee DIE Casters</h2>', unsafe_allow_html=True)
 
 
 url = "https://us-central1-1.gcp.cloud2.influxdata.com"
