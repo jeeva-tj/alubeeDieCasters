@@ -11,7 +11,7 @@ import plotly.express as px
 
 
 st.set_page_config(layout="wide")
-st.markdown('<div style="display:flex; align-items:center;"><img src="https://storage.cloud.google.com/alubee_bucket/biglogo.png?authuser=4" style="width:50px;height:50px;margin-right:10px;" />', unsafe_allow_html=True)
+st.markdown('<div style="display:flex; align-items:center;"><img src="https://storage.cloud.google.com/alubee_bucket/biglogo.png?authuser=4" style="width:80px;height:50px;margin-right:20px;" />', unsafe_allow_html=True)
 
 
 url = "https://us-central1-1.gcp.cloud2.influxdata.com"
