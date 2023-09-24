@@ -152,6 +152,9 @@ for table in tables:
 
 # Convert list of dictionaries to DataFrame
 df = pd.DataFrame(data_list)
+columns_to_drop = ['result', '_start','_stop','_field']  # List of columns to drop
+
+df = df.drop(columns=columns_to_drop)
 
 st.dataframe(df)
     # st.metric(label="<b>Total Rejections</b>", value=df_grouped["_value"].sum(), delta=0, delta_color="off", key="total_rejections")
