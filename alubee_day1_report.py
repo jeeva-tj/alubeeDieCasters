@@ -131,9 +131,29 @@ with column2:
 
 
 
-with column_fir3:
+with column_fir2:
     st.metric(label="Total Rejections", value=df_grouped["_value"].sum(), delta=0,delta_color="off")
 
+# with column_fir2:
+
+query = f'from(bucket:"{bucket}") |> range(start:2023-09-23T14:30:00.00Z , stop:2023-09-24T02:30:00.00Z) |> filter(fn: (r) => r["_measurement"] == "Operator")'
+tables = client.query_api().query(query, org=org)
+
+data_list = []
+
+for table in tables:
+    for row in table.records:
+        data = row.values
+        # Convert UTC time to IST
+        utc_time = data['_time']
+        ist = pytz.timezone('Asia/Kolkata')
+        data['_time'] = utc_time.astimezone(ist)
+        data_list.append(data)
+
+# Convert list of dictionaries to DataFrame
+df = pd.DataFrame(data_list)
+
+st.dataframe(df)
     # st.metric(label="<b>Total Rejections</b>", value=df_grouped["_value"].sum(), delta=0, delta_color="off", key="total_rejections")
 
 
