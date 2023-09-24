@@ -132,8 +132,9 @@ with column2:
 
 
 with column_fir3:
-    st.metric(label="<b>Total Rejections</b>", value=df_grouped["_value"].sum(), delta=0,delta_color="off")
+    # st.metric(label="Total Rejections", value=df_grouped["_value"].sum(), delta=0,delta_color="off")
 
+    st.metric(label="<b>Total Rejections</b>", value=df_grouped["_value"].sum(), delta=0, delta_color="off", key="total_rejections")
 
 
 
