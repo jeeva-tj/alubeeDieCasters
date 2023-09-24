@@ -63,10 +63,11 @@ with column1:
     st.markdown("")
     st.markdown("")
 
-column1,column2,column3,column4= st.columns(4)
+column_fir1,column_fir2,column_fir3,column_fir4,column_fir5= st.columns(5)
 
-with column1:
+with column_fir1:
     st.metric(label="Total Shots", value=df_grouped["_value"].sum(), delta=0,delta_color="off")
+
 
 
 column1,column2 = st.columns(2)
@@ -130,9 +131,8 @@ with column2:
 
 
 
-
-
-
+with column_fir1:
+    st.metric(label="Total Rejections", value=df_grouped["_value"].sum(), delta=0,delta_color="off")
 
 
 
