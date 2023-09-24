@@ -165,7 +165,7 @@ with column_fir3:
 
 with column_fir4:
 # Write "Operator" with reduced margin
-    st.write('<div style="margin-bottom: -10px;">Operator</div>', unsafe_allow_html=True)
+    st.write('<div style="margin-bottom: -10px;">Operator ID</div>', unsafe_allow_html=True)
 
     # Markdown with title
     st.markdown('<div style="margin-bottom: 10px;"><h3 class="title">F2 79 45 52</h3></div>', unsafe_allow_html=True)
