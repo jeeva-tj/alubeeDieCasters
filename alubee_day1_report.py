@@ -56,7 +56,7 @@ with column1:
     fig = px.bar(df_grouped, y='_value', x='_time', text_auto='.2s',
                 title="Shots Per Hour",color_discrete_sequence=['#00a651'])
     # fig.update_traces(textfont_size=12, textangle=0, textposition="inside", cliponaxis=False)
-    fig.update_xaxes(title='Time - Shitf II')
+    fig.update_xaxes(title='Time - Shift II')
     fig.update_yaxes(title='No of Shots')
     fig.update_layout(height=400, width=600)
 
@@ -101,7 +101,7 @@ with column2:
     # fig = px.bar(df_grouped, x='_time', y='_value',
     #             color='_value',
     #             labels={'pop':'Rejection Count'}, height=400)
-    fig.update_xaxes(title='Time - Shitf II')
+    fig.update_xaxes(title='Time - Shift II')
     fig.update_yaxes(title='No of Rejections')
     fig.update_traces(text=df_grouped['_value'], mode='lines+markers+text', textposition='top center')
     fig.update_layout(height=400, width=600)
