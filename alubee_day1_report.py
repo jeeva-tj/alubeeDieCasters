@@ -19,8 +19,8 @@ with column1:
 
 with column8:
 
-    st.markdown('<div style="margin-bottom: 10px;"><h7 class="title">Date  : 24 Sept 2023</h7></div>', unsafe_allow_html=True)
-    st.markdown('<div style="margin-bottom: 10px;"><h7 class="title">Shift : II</h7></div>', unsafe_allow_html=True)
+    st.markdown('<div style="margin-bottom: 10px;"><h7 class="title">Date  : 24 Sept 2023  Shift : II</h7></div>', unsafe_allow_html=True)
+    # st.markdown('<div style="margin-bottom: 10px;"><h7 class="title">Shift : II</h7></div>', unsafe_allow_html=True)
 
 
 url = "https://us-central1-1.gcp.cloud2.influxdata.com"
