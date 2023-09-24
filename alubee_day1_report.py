@@ -11,7 +11,7 @@ import plotly.express as px
 
 
 st.set_page_config(layout="wide")
-st.markdown('<h1 class="title">Alubee DIE Casters</h1>', unsafe_allow_html=True)
+st.markdown('<h2 class="title">Alubee DIE Casters</h2>', unsafe_allow_html=True)
 
 
 url = "https://us-central1-1.gcp.cloud2.influxdata.com"
