@@ -56,6 +56,12 @@ df['_time'] = df['_time'].dt.floor('H') + pd.Timedelta(hours=1)
 
 df_grouped = df.groupby('_time').agg({'_value': 'sum'}).reset_index()
 
+column1,column2= st.columns(2)
+
+with column1:
+
+    st.markdown("")
+
 column1,column2,column3,column4= st.columns(4)
 
 with column1:
