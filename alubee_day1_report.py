@@ -160,7 +160,8 @@ st.dataframe(df)
     # st.metric(label="<b>Total Rejections</b>", value=df_grouped["_value"].sum(), delta=0, delta_color="off", key="total_rejections")
 
 
-
+with column_fir3:
+    st.write("Test")
 
 
 
