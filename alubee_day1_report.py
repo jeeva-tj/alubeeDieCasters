@@ -159,7 +159,7 @@ df = df.drop(columns=columns_to_drop)
 
 
 with column_fir3:
-    st.metric(label="Average Cycle Time in Sec", value=49.73, delta=0,delta_color="off")
+    st.metric(label="Average Cycle Time in Sec", value=49.73)
 
 
 
