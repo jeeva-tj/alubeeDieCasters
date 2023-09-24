@@ -11,15 +11,15 @@ import plotly.express as px
 
 
 st.set_page_config(layout="wide")
-column1,column2,column3,column4,column5,column6,column7,column8 = st.columns(8)
+column1,column2,column3,column4,column5,column6,column7 = st.columns(7)
 
 with column1:
 
     st.markdown('<div style="display:flex; align-items:center;"><img src="https://storage.cloud.google.com/alubee_bucket/biglogo.png?authuser=4" style="width:90px;height:70px;margin-right:20px;" />', unsafe_allow_html=True)
 
-with column5:
+with column4:
     st.markdown('<div style="margin-bottom: 10px;"><h3 class="title">Day I - Test Report</h3></div>', unsafe_allow_html=True)
-with column8:
+with column7:
 
     st.markdown('<div style="margin-bottom: 10px;"><h7 class="title">Date  : 23 Sept 2023  Shift : II (8:00 to 7:30)</h7></div>', unsafe_allow_html=True)
     # st.markdown('<div style="margin-bottom: 10px;"><h7 class="title">Shift : II</h7></div>', unsafe_allow_html=True)
